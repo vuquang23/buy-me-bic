@@ -18,7 +18,8 @@ const BUYER_TESTNET = '0xE44CFe606eE964c99824129619af116e2cd4AA9a'
 
 // TODO: Change to 1 to Buy real BIC
 const TYPE = 0
-const MY_BUSD = (new BN((1e18).toString())).mul(new BN('790')) //790000000000000000000
+const MY_BUSD = new BN('790288793265668262022')
+// const MY_BUSD = (new BN((1e18).toString())).mul(new BN('790')) //790000000000000000000
 
 const WHITELIST_PRIVATE_SALE = '0x289542b9a02c7937d659afe40404ec4f7813e59fc5caf7269eff9a359916cb5c'
 let numTry = 0
