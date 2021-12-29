@@ -17,7 +17,7 @@ const BUYER_MAINNET = '0x89b681130154FD6575eb52723301a2C4b991Da07'
 const BUYER_TESTNET = '0xE44CFe606eE964c99824129619af116e2cd4AA9a'
 
 // TODO: Change to 1 to Buy real BIC
-const TYPE = 0
+const TYPE = 1
 const MY_BUSD = new BN('790288793265668262022')
 // const MY_BUSD = (new BN((1e18).toString())).mul(new BN('790')) //790000000000000000000
 
@@ -57,7 +57,7 @@ async function BuyMeBIC(web3, privateContract, whitelistContract, me, privateKey
             console.log("try again in setTimeout function\n\n")
             await BuyMeBIC(web3, privateContract, whitelistContract, me, privateKey)
         }
-    }, 2509)
+    }, 1500)
 }
 
 async function main() {
